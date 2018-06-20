@@ -7,9 +7,6 @@
 // string an array that hold all the names of anime
 var topic=["Naruto", "Bleach","One Piece Anime", "Dragon Ball", "Death Note", "Attack of Titan"];
 
-
-
-
 //=========================================================================================================
 // FUNCTION
 
@@ -23,9 +20,10 @@ function renderButtons(){
     //iterate all strings in the array then make a button for each string
     // for(i=0;  i<topic.length; i++){
     //     $("#animeButtons").append("<button type='button' name='btn-"+i+"' value='"+topic[i]+"'>"+topic[i]+"</button>" );
-    // };// end for
+    // };// end for  ( DONT MIND THIS COMMENT. THIS COMMENT FOR MY REFERENCES)
       
 
+    //iterate all strings in the array then make a button for each string
         for(i=0; i<topic.length; i++){
             //creating button using jquary: it create (<button> and close </button)
             var addButton= $("<button>");
@@ -64,8 +62,6 @@ function submitButtonToArray (){
       // calling renderButtons to reloaded all the buttons
       renderButtons();
 
-
-     
     })// end click event 
 
 }// end submitButtonToArray
@@ -75,8 +71,6 @@ function submitButtonToArray (){
 // function  that call the giphy after click the button
 function buttonRenderGiphy(){
 
-    
-   
     // event click listener  to all buttons
     $(document).on("click",".anime", function(){
     
@@ -134,9 +128,9 @@ function buttonRenderGiphy(){
 
              // add class to image
              animeImage.addClass("gif");
-            // Appending the paragraph and image tag to the animalDiv
             
-
+            
+             // Appending the paragraph and image tag to the animalDiv
             animeDiv.append(p);
             animeDiv.append(animeImage);
 
@@ -145,14 +139,13 @@ function buttonRenderGiphy(){
 
             }// end for
 
+            //call stillOrAnimateImg
             stillOrAnimateImg();
              
         });// end (response)
-           
-        
-         
 
     });//end button click listener
+
 }// end buttonRenderGiphy
 
 //function to turn still image to gif  or turn gif to still image
@@ -188,9 +181,5 @@ function stillOrAnimateImg(){
 renderButtons();
 submitButtonToArray ();
 buttonRenderGiphy();
-
-
-
-
 
 //=========================================================================================================
