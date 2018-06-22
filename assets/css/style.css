@@ -1,0 +1,23 @@
+#header{
+    text-align: center;
+    font-size: 30px;
+    font-color: black;
+    background-color: blue;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+
+}
+
+.anime{
+
+    height: 30px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    color: red;
+    /* background-color: aqua; */
+}
+.animeDiv{
+    float:left;
+    margin: 3px;
+}
